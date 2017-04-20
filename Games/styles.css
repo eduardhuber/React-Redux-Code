@@ -1,0 +1,110 @@
+/*
+ * Games styles
+ */
+
+.root {
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.top,
+.games {
+  max-width: 68rem;
+}
+
+.search,
+.top > i {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.search {
+  right: 2rem;
+}
+
+.top {
+  position: relative;
+  padding: 0 2rem;
+  margin: 1.5rem auto;
+  & > i {
+    left: 2rem;
+    font-size: 1.5rem;
+  }
+  h1 {
+    margin: 0;
+    font-weight: 400;
+  }
+}
+
+.games {
+  margin: auto;
+  padding: 0.5rem 2rem 2.5rem;
+}
+
+.nav {
+  height: 4rem;
+  display: flex;
+  padding: 0 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid $grey3;
+  i {
+    margin-right: 1rem;
+  }
+}
+
+@media only screen and (min-width: $md) and (max-height: $lg){
+  .search,
+  .top > i {
+    position: absolute;
+  }
+}
+
+@media (min-width: $sm) {
+  .root {
+    padding-top: 5rem;
+  }
+  .top {
+    margin: 2rem auto 1.5rem;
+  }
+}
+
+@media (min-width: 10px) and (max-width: $md) {
+  .search input {
+    margin-top: 24px;
+  }
+}
+
+@media (min-width: $md) {
+  .top {
+    margin: 2.5rem auto 2rem;
+    & > i {
+      display: none;
+    }
+  }
+  .search {
+    display: flex!important;
+  }
+}
+
+.search {
+  width: 16rem;
+  display: unset;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  border: 1px solid #676767;
+  transition: border-color 0.25s;
+  border-radius: 2rem;
+  &:hover,
+  &:focus {
+     border-color: #909090;
+   }
+  input {
+    outline: none;
+  }
+  i {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+  }
+}

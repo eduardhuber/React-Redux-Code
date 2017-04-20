@@ -1,0 +1,13 @@
+/*
+ * GameDetails styles
+ */
+
+.root {
+  padding-top: 4rem;
+}
+
+@media (min-width: $sm) {
+  .root {
+    padding-top: 5rem;
+  }
+}
